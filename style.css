@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #E9E5DD;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ab5c17;
+    padding: 6px 45px;
+}
+header .logo{
+    height: 80px;
+    border-radius: 50%;
+}
+header nav{
+    display: flex;
+    gap: 30px;
+}
+header nav a{
+    color: #E9E5DD;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.icon{
+    height: 30px;
+}
+
+
+
+.intro{
+    margin: 80px 135px 140px 135px;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    font-family: "Alfa Slab One", serif;
+}
+.intro nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 330px;
+    line-height: 57px;
+}
+.intro nav .medium{
+    font-size: 57px;
+}
+.intro nav .small{
+    font-size: 40px;
+}
+.intro nav .big{
+    font-size: 90px;
+}
+.banner{
+    width: 500px;
+}
+
+
+.flavors{
+    background-color: #592B02;
+    color: #E9E5DD;
+    padding-top: 70px;
+    padding-left: 135px;
+    padding-right: 135px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flavors h1{
+    font-size: 50px;
+}
+.flavors .row{
+    margin-top: 45px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #dcd5c6;
+    color: #bf8431;
+    padding: 16px;
+    border-radius: 16px;
+}
+.card img{
+    width: 230px;
+    border-radius: 16px;
+}
+.card h1{
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+.card h2{
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+.card button{
+    background-color: #bf8431;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
