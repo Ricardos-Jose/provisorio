@@ -1,0 +1,134 @@
+@media (max-width: 600px) {
+  body {
+    padding-top: env(safe-area-inset-top, 60px);
+  }
+
+  .logo {
+    display: none;
+  }
+  .spantes {
+    display: inline-block;
+  }
+  .media-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .media-header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .media-header nav a {
+    padding: 0px 15px;
+  }
+  .media-header div {
+    display: flex;
+    gap: 15px;
+  }
+
+  .media-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20px;
+    text-align: center;
+  }
+  .media-intro .big {
+    margin: 0;
+  }
+  .media-intro nav {
+    height: auto;
+    line-height: 1.2;
+    align-items: center;
+  }
+
+  .media-intro .banner {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  .font-contrast {
+    font-size: 60px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: #ab5c17;
+  }
+
+  .intro nav .medium {
+    font-size: 24px;
+  }
+  .intro nav .small {
+    font-size: 24px;
+  }
+  .media-flavors {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .flavors .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: initial;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .card img {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-family: monospace;
+    cursor: pointer;
+    background-color: #dcd5c6;
+    position: relative;
+    margin-right: auto;
+    z-index: 21;
+  }
+  .menu-mobile span {
+    font-style: 32px;
+    color: #592b02;
+  }
+  .menu-mobile::before {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background-color: #592b02;
+    box-shadow:
+      0 4px #592b02,
+      0 -4px #592b02;
+  }
+  .nav-list {
+    display: none;
+    position: fixed;
+    top: 60px;
+    bottom: 0px;
+    left: 0;
+    border-radius: 4px;
+    background-color: #ab5c17;
+    max-width: 160px;
+    z-index: 10;
+    text-align: center;
+  }
+
+  .nav-list.js {
+    display: flex;
+  }
+}
