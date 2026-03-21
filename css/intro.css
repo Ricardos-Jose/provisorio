@@ -1,0 +1,34 @@
+.intro {
+  margin: 80px 135px 140px 135px;
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  font-family: 'Eagle Lake', serif;
+}
+
+.font-contrast {
+  font-family: 'Rye', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 330px;
+  line-height: 57px;
+}
+.intro nav .medium {
+  font-size: 57px;
+}
+.intro nav .small {
+  font-size: 40px;
+}
+.intro nav .big {
+  font-size: 90px;
+}
+
+.banner {
+  width: 500px;
+}
