@@ -1,18 +1,11 @@
 .flavors {
   background-color: #592b02;
   color: #e9e5dd;
-<<<<<<< HEAD
   padding: 40px 5vw;
   /* padding-top: 70px;
   padding-left: 135px;
   padding-right: 135px; */
   height: auto;
-=======
-  padding-top: 70px;
-  padding-left: 135px;
-  padding-right: 135px;
-  height: 700px;
->>>>>>> 04865065bd0bf1d390fa98aa2ed3da5280cdfe29
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,16 +15,10 @@
 }
 .flavors .row {
   margin-top: 45px;
-<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(200px, calc(50% - 10px)), 1fr));
   gap: 20px;
   width: 100%;
-=======
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
->>>>>>> 04865065bd0bf1d390fa98aa2ed3da5280cdfe29
 }
 .card {
   display: flex;
@@ -43,11 +30,7 @@
 }
 
 .card img {
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 230px;
->>>>>>> 04865065bd0bf1d390fa98aa2ed3da5280cdfe29
   border-radius: 16px;
 }
 .card h1 {
