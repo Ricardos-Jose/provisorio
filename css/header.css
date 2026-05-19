@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ab5c17;
+  background-color: var(--header-nav);
   padding: 6px 45px;
 }
 header .logo {
@@ -14,13 +14,14 @@ header nav {
   gap: 30px;
 }
 header nav a {
-  color: #e9e5dd;
+  /*AINDA NÃO DECIDIDO COR PARA TIPOGRAFIAS*/
+  color: var(--background-primary);
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
 }
 
-.icon-group{
+.icon-group {
   display: flex;
   gap: 20px;
 }

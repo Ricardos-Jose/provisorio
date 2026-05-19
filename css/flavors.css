@@ -1,6 +1,6 @@
 .flavors {
-  background-color: #592b02;
-  color: #e9e5dd;
+  background-color: var(--background-secondary);
+  color: var(--background-primary);
   padding: 40px 5vw;
   /* padding-top: 70px;
   padding-left: 135px;
@@ -16,15 +16,18 @@
 .flavors .row {
   margin-top: 45px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(200px, calc(50% - 10px)), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(200px, calc(50% - 10px)), 1fr)
+  );
   gap: 20px;
   width: 100%;
 }
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #dcd5c6;
-  color: #bf8431;
+  background-color: var(--card-bg);
+  color: var(--card-text-color);
   padding: 16px;
   border-radius: 16px;
 }
@@ -42,7 +45,7 @@
   margin-bottom: 14px;
 }
 .card button {
-  background-color: #bf8431;
+  background-color: var(--card-text-color);
   color: #ffffff;
   font-size: 20px;
   padding: 8px;

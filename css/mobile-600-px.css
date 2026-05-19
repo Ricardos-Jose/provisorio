@@ -61,7 +61,7 @@
     left: 0;
     right: 0;
     z-index: 20;
-    background-color: #ab5c17;
+    background-color: var(--header-nav);
   }
 
   .intro nav .medium {
@@ -96,21 +96,21 @@
     text-transform: uppercase;
     font-family: monospace;
     cursor: pointer;
-    background-color: #dcd5c6;
+    background-color: var(--card-bg);
     position: relative;
     margin-right: auto;
     z-index: 21;
   }
   .menu-mobile span {
     font-style: 32px;
-    color: #592b02;
+    color: var(--card-text-color);
   }
   .menu-mobile::before {
     content: '';
     display: inline-block;
     height: 2px;
     width: 12px;
-    background-color: #592b02;
+    background-color: var(--card-text-color);
     box-shadow:
       0 4px #592b02,
       0 -4px #592b02;
@@ -122,7 +122,7 @@
     bottom: 0px;
     left: 0;
     border-radius: 4px;
-    background-color: #ab5c17;
+    background-color: var(--header-nav);
     max-width: 160px;
     z-index: 10;
     text-align: center;

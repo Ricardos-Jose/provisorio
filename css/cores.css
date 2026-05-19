@@ -1,0 +1,8 @@
+/*CONFORME DESENVOLVIMENTO, OS TERMOS DEVEM SE TORNAR MAIS GENÉRICOS E MENOS ESPECÍFICOS.*/
+:root {
+  --background-primary: #e9e5dd;
+  --background-secondary: #592b02;
+  --header-nav: #ab5c17;
+  --card-bg: #dcd5c6;
+  --card-text-color: #bf8431;
+}
