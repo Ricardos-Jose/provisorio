@@ -43,6 +43,11 @@
     font-size: 60px;
   }
   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px;
+    flex-wrap: wrap;
     position: fixed;
     top: 0;
     left: 0;
