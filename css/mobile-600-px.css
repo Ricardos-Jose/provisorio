@@ -1,14 +1,8 @@
 @media (max-width: 600px) {
-  body {
-    padding-top: env(safe-area-inset-top, 60px);
-  }
-
   .logo {
     display: none;
   }
-  .spantes {
-    display: inline-block;
-  }
+
   .media-header {
     display: flex;
     flex-direction: row;
@@ -48,9 +42,7 @@
   }
 
   .media-intro .banner {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
+    display: none;
   }
   .font-contrast {
     font-size: 60px;
@@ -102,7 +94,6 @@
     z-index: 21;
   }
   .menu-mobile span {
-    font-style: 32px;
     color: var(--card-text-color);
   }
   .menu-mobile::before {
@@ -110,7 +101,7 @@
     display: inline-block;
     height: 2px;
     width: 12px;
-    background-color: var(--card-text-color);
+    background-color: #592b02;
     box-shadow:
       0 4px #592b02,
       0 -4px #592b02;

@@ -1,7 +1,7 @@
 .flavors {
   background-color: var(--background-secondary);
   color: var(--background-primary);
-  padding: 40px 5vw;
+  padding: 40px;
   /* padding-top: 70px;
   padding-left: 135px;
   padding-right: 135px; */
@@ -35,6 +35,20 @@
 .card img {
   width: 100%;
   border-radius: 16px;
+  transition: 1s;
+}
+
+.image-container {
+  position: relative;
+}
+.imagem-hover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.image-container:hover .imagem-hover {
+  opacity: 1;
 }
 .card h1 {
   font-size: 28px;

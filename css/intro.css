@@ -8,7 +8,7 @@
   gap: 50px;
 }
 
-.font-contrast {
+.title-font {
   font-family: 'Rye', serif;
   font-weight: 400;
   font-style: normal;
@@ -32,6 +32,11 @@
 }
 
 .banner {
-  width: 70%;
+  width: 100%;
   max-width: 400px;
+  border-radius: 4px;
+}
+
+.contrast-font {
+  color: var(--contrast-font);
 }

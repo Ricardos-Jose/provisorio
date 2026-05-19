@@ -1,0 +1,89 @@
+.container-formulario {
+  width: 100%;
+  max-width: 950px;
+  margin: 90px;
+  justify-self: center;
+}
+label {
+  margin-top: 10px;
+}
+.grupo-formulario {
+  background-color: var(--background-secondary);
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 60px;
+}
+
+.grupo-formulario h2 {
+  color: var(--background-primary);
+  margin-bottom: 15px;
+  font-size: 42px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 25px;
+}
+
+.grid-entrega-topo {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  color: var(--card-text-color);
+  margin-bottom: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.campo input {
+  color: var(--card-bg);
+  height: 65px;
+  padding: 0 10px;
+  font-size: 22px;
+  border: 1px solid #cfc7bd;
+  background-color: transparent;
+  outline: none;
+}
+
+.campo select {
+  height: 65px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #cfc7bd;
+  background-color: transparent;
+  outline: none;
+  color: var(--card-bg);
+}
+
+.campo textarea {
+  min-height: 180px;
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid #cfc7bd;
+  background-color: transparent;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+}
+
+::placeholder {
+  color: var(--card-bg);
+}
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-entrega-topo {
+    grid-template-columns: 1fr;
+  }
+}
