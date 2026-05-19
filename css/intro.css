@@ -1,9 +1,11 @@
 .intro {
-  margin: 80px 135px 140px 135px;
+  /* margin: 80px 30vw 140px 30vw; */
+  padding: 40px 0vw;
   display: flex;
-  align-items: self-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   font-family: 'Eagle Lake', serif;
+  gap: 50px;
 }
 
 .font-contrast {
@@ -30,5 +32,6 @@
 }
 
 .banner {
-  width: 500px;
+  width: 70%;
+  max-width: 400px;
 }

@@ -19,6 +19,12 @@ header nav a {
   font-size: 20px;
   font-weight: 600;
 }
+
+.icon-group{
+  display: flex;
+  gap: 20px;
+}
+
 .icon {
   height: 30px;
 }
