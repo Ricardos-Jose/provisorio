@@ -29,10 +29,10 @@
 }
 
 .logo-footer img {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .footer {
   background-color: var(--card-text-color);

@@ -124,4 +124,38 @@
   .nav-list.js {
     display: flex;
   }
+  .logo-footer img {
+    display: none;
+  }
+  footer .container-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    gap: 0;
+  }
+
+  .footer .container-grid .contato,
+  .footer .container-grid .redes-sociais {
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+@media (max-width: 748px) {
+  .container-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contato {
+    grid-column: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .redes-sociais {
+    grid-column: 2;
+    width: 100%;
+  }
 }
