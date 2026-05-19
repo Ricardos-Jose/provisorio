@@ -20,16 +20,14 @@ header nav a {
   font-size: 20px;
   font-weight: 600;
 }
-
 .icon-group {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
-
 .icon {
   height: 30px;
 }
 
-.menu-mobile {
+.spantes {
   display: none;
 }
