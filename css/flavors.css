@@ -1,0 +1,49 @@
+.flavors {
+  background-color: #592b02;
+  color: #e9e5dd;
+  padding-top: 70px;
+  padding-left: 135px;
+  padding-right: 135px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flavors h1 {
+  font-size: 50px;
+}
+.flavors .row {
+  margin-top: 45px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #dcd5c6;
+  color: #bf8431;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.card img {
+  width: 230px;
+  border-radius: 16px;
+}
+.card h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.card button {
+  background-color: #bf8431;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
