@@ -1,5 +1,8 @@
 {
+<<<<<<< HEAD
   "type": "module",
+=======
+>>>>>>> 04865065bd0bf1d390fa98aa2ed3da5280cdfe29
   "dependencies": {
     "express": "^5.2.1",
     "pg": "^8.20.0"

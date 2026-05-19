@@ -19,12 +19,15 @@ header nav a {
   font-size: 20px;
   font-weight: 600;
 }
+<<<<<<< HEAD
 
 .icon-group{
   display: flex;
   gap: 20px;
 }
 
+=======
+>>>>>>> 04865065bd0bf1d390fa98aa2ed3da5280cdfe29
 .icon {
   height: 30px;
 }
