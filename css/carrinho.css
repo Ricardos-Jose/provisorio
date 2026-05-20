@@ -1,4 +1,4 @@
-.carrinho-container{
+.carrinho-container {
     padding: 40px 10vw;
     flex: 1;
     display: flex;
@@ -6,36 +6,37 @@
     align-items: center;
     gap: 20px;
 }
-.titulo{
+.titulo {
     padding: 40px 10vw 0px;
 }
-.carrinho-item{
+.carrinho-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #F2C785;
+    background-color: #f2c785;
     border-radius: 16px;
     padding: 16px;
     width: 100%;
     border: 1px solid #c6a36e;
 }
-.left-carrinho-item{
+.left-carrinho-item {
     display: flex;
     align-items: center;
     gap: 60px;
     width: 100%;
 }
 
-.left-carrinho-item h2{
+.left-carrinho-item h2 {
     margin-bottom: 16px;
 }
-.quantidade .alterar{
+.quantidade .alterar {
     width: 28px;
     height: 28px;
     border-radius: 50%;
     border: 1px solid #7c6644;
-    
+    cursor: pointer;
+
     font-weight: bold;
     font-size: 26px;
     text-align: center;
@@ -44,35 +45,36 @@
     justify-content: center;
 }
 
-.quantidade{
+.quantidade {
     font-size: 20px;
     display: flex;
     gap: 8px;
 }
 
-.quantidade p{
+.quantidade p {
     width: 23px;
     text-align: center;
 }
 
-.carrinho-item button img{
+.carrinho-item button img {
     width: 90%;
 }
 
-.lixo_button{
-    width: 38px;
-    height: 38px;
+.lixo_button {
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    cursor: pointer;
+
     position: relative;
     border: 1px solid #7c6644;
     border-radius: 8px;
     background-color: white;
 }
 
-.lixo_button img{
+.lixo_button img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -84,16 +86,16 @@
     opacity: 1;
 }
 
-.lixo{
+.lixo {
     width: 32px;
     height: 32px;
 }
 
-.lixo_hover{
+.lixo_hover {
     opacity: 0;
 }
 
-.checkout{
+.checkout {
     /* padding: 0px 10vw; */
     display: flex;
     flex-direction: column;
@@ -102,7 +104,7 @@
     width: 100%;
 }
 
-.preco-checkout{
+.preco-checkout {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -110,25 +112,26 @@
     font-size: 20px;
 }
 
-.preco-total-checkout{
+.preco-total-checkout {
     margin-top: 12px;
     margin-bottom: 12px;
     font-size: 28px;
     font-weight: bold;
 }
 
-.linha{
+.linha {
     border: 1px solid #592b02;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.checkout a{
+.checkout a {
     width: 100%;
 }
 
-#finalizar{
+#finalizar {
     background-color: #592b02;
+    cursor: pointer;
     color: white;
     padding: 16px;
     border-radius: 16px;

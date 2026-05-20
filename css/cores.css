@@ -1,9 +1,13 @@
 /*CONFORME DESENVOLVIMENTO, OS TERMOS DEVEM SE TORNAR MAIS GENÉRICOS E MENOS ESPECÍFICOS.*/
 :root {
-  --background-primary: #f9f6cc;
-  --background-secondary: #592b02;
-  --header-nav: #ab5c17;
-  --card-bg: #dcd5c6;
-  --card-text-color: #bf8431;
-  --contrast-font: #c34721;
+    --background-primary: #f9f6cc;
+    --background-secondary: #592b02;
+    --header-nav: #ab5c17;
+    --card-bg: #dcd5c6;
+    --card-text-color: #bf8431;
+    --contrast-font: #c34721;
+}
+
+.text-black {
+    color: black;
 }

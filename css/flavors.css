@@ -1,76 +1,79 @@
 .flavors {
-  background-color: var(--background-secondary);
-  color: var(--background-primary);
-  padding: 40px;
-  /* padding-top: 70px;
+    background-color: var(--background-secondary);
+    color: var(--background-primary);
+    padding: 40px;
+    /* padding-top: 70px;
   padding-left: 135px;
   padding-right: 135px; */
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .flavors .flavors-title {
-  align-self: center;
+    align-self: center;
 }
 
 .flavors h1 {
-  font-size: 50px;
+    font-size: 50px;
 }
 .flavors .row {
-  margin-top: 45px;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(200px, calc(50% - 10px)), 1fr)
-  );
-  gap: 20px;
-  width: 100%;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, calc(50% - 10px)), 1fr));
+    gap: 20px;
+    width: 100%;
 }
 .card {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--card-bg);
-  color: var(--card-text-color);
-  padding: 16px;
-  border-radius: 16px;
-  height: 100%;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    color: var(--card-text-color);
+    padding: 16px;
+    border-radius: 16px;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .card img {
-  width: 100%;
-  border-radius: 16px;
-  transition: 1s;
+    width: 100%;
+    border-radius: 16px;
+    transition: 1s;
 }
 
 .image-container {
-  position: relative;
+    position: relative;
 }
 .imagem-hover {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
 }
 .image-container:hover .imagem-hover {
-  opacity: 1;
+    opacity: 1;
 }
 .card h1 {
-  font-size: 28px;
-  margin-bottom: -2px;
+    font-size: 28px;
+    margin-bottom: -2px;
 }
 .card h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 .card button {
-  background-color: var(--card-text-color);
-  color: #ffffff;
-  font-size: 20px;
-  padding: 8px;
-  border-radius: 8px;
-  border: none;
-  font-weight: bold;
+    cursor: pointer;
+    background-color: var(--card-text-color);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+.more-products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
