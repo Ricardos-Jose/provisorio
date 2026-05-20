@@ -46,7 +46,7 @@ function atualizar_tela(){
         container.innerHTML = '<h1>O carrinho está vazio.</h1>';
     }else{
         carrinho.forEach(item => {
-            
+
             container.innerHTML += 
             `
             <div class="carrinho-item">
@@ -54,7 +54,7 @@ function atualizar_tela(){
 
                     <div>
                     <h2>${item.nome}</h2>
-                    <p>R$ ${item.preco}</p>
+                    <p>R$ ${item.preco.toFixed(2)}</p>
                     </div>
 
                     <div class="quantidade">
