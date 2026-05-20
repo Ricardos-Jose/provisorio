@@ -8,7 +8,7 @@ function Adicionar_ao_carrinho(id,nome,preco){
     if(item){
         item.quantidade+=1;
     }else{
-        item.push({'id':id, 'nome':nome, 'preco':preco, 'quantidade':1});
+        carrinho.push({'id':id, 'nome':nome, 'preco':preco, 'quantidade':1});
     }
 
     atualizar_tela();
