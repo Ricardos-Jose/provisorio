@@ -1,4 +1,87 @@
 .carrinho-container{
     padding: 40px 10vw;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    padding: 40px 10vw;
+}
+.carrinho-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #F2C785;
+    border-radius: 16px;
+    padding: 16px;
+    width: 100%;
+    border: 1px solid #c6a36e;
+}
+.left-carrinho-item{
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.left-carrinho-item h2{
+    margin-bottom: 16px;
+}
+.quantidade .alterar{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #7c6644;
+    
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantidade{
+    font-size: 20px;
+    display: flex;
+    gap: 8px;
+}
+.carrinho-item button img{
+    width: 90%;
+}
+
+.lixo_button{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    border: 1px solid #7c6644;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.lixo_button img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lixo_button:hover .lixo_hover {
+    opacity: 1;
+}
+
+.lixo{
+    width: 32px;
+    height: 32px;
+}
+
+.lixo_hover{
+    opacity: 0;
 }
