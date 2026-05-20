@@ -13,6 +13,9 @@
   }
 }
 @media (max-width: 600px) {
+  body{
+    padding-top: 60px;
+  }
   .logo {
     display: none;
   }
