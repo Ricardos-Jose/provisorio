@@ -2,6 +2,8 @@ const container = document.getElementsByClassName('carrinho-container')[0];
 
 let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
+const preco_entrega =12.99;
+
 function Adicionar_ao_carrinho(id,nome,preco){
     let item = carrinho.find(item=> item.id === id)
     
@@ -41,11 +43,16 @@ function remover_item(id){
 function atualizar_tela(){
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
 
+    let subtotal = 0;
+
+
     container.innerHTML = "";
     if (carrinho.length === 0) {
         container.innerHTML = '<h1>O carrinho está vazio.</h1>';
     }else{
         carrinho.forEach(item => {
+
+            subtotal += item.preco * item.quantidade;
 
             container.innerHTML += 
             `
@@ -73,8 +80,30 @@ function atualizar_tela(){
                 </button>
             </div>
             `
-
         });
+
+        container.innerHTML += 
+        `
+            <div class="checkout">
+
+                <div class="linha"></div>
+
+                <div class="preco-checkout"><p>Subtotal:</p> <p>R$${subtotal.toFixed(2)}</p></div>
+                <div class="preco-checkout"><p>Entrega:</p>  <p>R$${preco_entrega}</p></div>
+                
+                <div class="preco-checkout preco-total-checkout"><p>Total:</p> <p>R$${(subtotal+preco_entrega).toFixed(2)}</p> </div>
+
+
+
+                <a href="checkout.html">
+                <button id="finalizar">
+                    <p>Finalizar compra</p>
+                </button>
+                </a>
+            </div>
+        `
+
+
     }
 
 }

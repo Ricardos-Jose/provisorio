@@ -7,7 +7,7 @@
     gap: 20px;
 }
 .titulo{
-    padding: 40px 10vw;
+    padding: 40px 10vw 0px;
 }
 .carrinho-item{
     display: flex;
@@ -85,4 +85,49 @@
 
 .lixo_hover{
     opacity: 0;
+}
+
+.checkout{
+    /* padding: 0px 10vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.preco-checkout{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.preco-total-checkout{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.linha{
+    border: 1px solid #592b02;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.checkout a{
+    width: 100%;
+}
+
+#finalizar{
+    background-color: #592b02;
+    color: white;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    border: none;
 }
