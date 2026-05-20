@@ -17,6 +17,9 @@ a {
 
 body {
   background-color: var(--background-primary);
+  display: flex;
+  flex-direction:column;
+  min-height: 100vh;
 }
 
 .background-secondary {
