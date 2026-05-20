@@ -21,10 +21,10 @@
     border: 1px solid #c6a36e;
 }
 .left-carrinho-item{
-    margin-right: 50px;
     display: flex;
     align-items: center;
     gap: 60px;
+    width: 100%;
 }
 
 .left-carrinho-item h2{
@@ -49,6 +49,12 @@
     display: flex;
     gap: 8px;
 }
+
+.quantidade p{
+    width: 23px;
+    text-align: center;
+}
+
 .carrinho-item button img{
     width: 90%;
 }
