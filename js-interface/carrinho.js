@@ -2,53 +2,49 @@ const container = document.getElementsByClassName('carrinho-container')[0];
 
 let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
-function Adicionar_ao_carrinho(id,nome,preco){
-    let item = carrinho.find(item=> item.id === id)
-    
-    if(item){
-        item.quantidade+=1;
-    }else{
-        carrinho.push({'id':id, 'nome':nome, 'preco':preco, 'quantidade':1});
-    }
+function Adicionar_ao_carrinho(id, nome, preco) {
+  let item = carrinho.find((item) => item.id === id);
 
-    atualizar_tela();
+  if (item) {
+    item.quantidade += 1;
+  } else {
+    carrinho.push({ id: id, nome: nome, preco: preco, quantidade: 1 });
+  }
+
+  atualizar_tela();
 }
 
-function alterar_quantidade(id,quantidade){
+function alterar_quantidade(id, quantidade) {
+  let item = carrinho.find((item) => item.id === id);
 
-    let item = carrinho.find(item=> item.id === id)
+  if (item) {
+    item.quantidade += quantidade;
+  } else {
+    console.log('Erro no alterar quantidade de id', id);
+  }
 
-    if(item){
-        item.quantidade += quantidade
-    }else{
-        console.log("Erro no alterar quantidade de id",id);
-    }
+  if (item.quantidade <= 0) {
+    carrinho = carrinho.filter((item) => item.id !== id);
+  }
 
-    if (item.quantidade <= 0) {
-        carrinho = carrinho.filter(item => item.id !== id);
-    }
-
-    atualizar_tela();
+  atualizar_tela();
 }
 
-function remover_item(id){
+function remover_item(id) {
+  carrinho = carrinho.filter((item) => item.id !== id);
 
-    carrinho = carrinho.filter(item => item.id !== id);
-
-    atualizar_tela();
+  atualizar_tela();
 }
 
-function atualizar_tela(){
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+function atualizar_tela() {
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
 
-    container.innerHTML = "";
-    if (carrinho.length === 0) {
-        container.innerHTML = '<h1>O carrinho está vazio.</h1>';
-    }else{
-        carrinho.forEach(item => {
-
-            container.innerHTML += 
-            `
+  container.innerHTML = '';
+  if (carrinho.length === 0) {
+    container.innerHTML = '<h1>O carrinho está vazio.</h1>';
+  } else {
+    carrinho.forEach((item) => {
+      container.innerHTML += `
             <div class="carrinho-item">
                 <div class="left-carrinho-item">
 
@@ -72,11 +68,9 @@ function atualizar_tela(){
                 
                 </button>
             </div>
-            `
-
-        });
-    }
-
+            `;
+    });
+  }
 }
 
 atualizar_tela();

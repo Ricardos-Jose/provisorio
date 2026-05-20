@@ -11,9 +11,18 @@
     grid-column: 2;
     width: 100%;
   }
+  .intro nav .medium {
+    font-size: 24px;
+  }
+  .intro nav .small {
+    font-size: 18px;
+  }
+  .intro nav .big {
+    font-size: 36px;
+  }
 }
 @media (max-width: 600px) {
-  body{
+  body {
     padding-top: 60px;
   }
   .logo {
