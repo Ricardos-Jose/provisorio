@@ -1,3 +1,31 @@
 .sobre-container{
     padding: 40px 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    text-align: justify;
+    width: 100%;
+}
+
+.sobre-item img{
+    width: 100%;
+}
+
+.sobre-item.invertido{
+    flex-direction: row-reverse;
+}
+
+.sobre-item div{
+    width: 60vw;
+}
+
+.sobre-item iframe{
+    height: inherit;
 }
