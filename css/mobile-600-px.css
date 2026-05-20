@@ -11,9 +11,21 @@
     grid-column: 2;
     width: 100%;
   }
+  .intro nav .medium {
+    font-size: 24px;
+    line-height: 1;
+  }
+  .intro nav .small {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .intro nav .big {
+    font-size: 36px;
+    line-height: 1.1;
+  }
 }
 @media (max-width: 600px) {
-  body{
+  body {
     padding-top: 60px;
   }
   .logo {
@@ -47,6 +59,7 @@
   .media-intro .big {
     margin: 0;
   }
+
   .media-intro nav {
     height: auto;
     line-height: 1.2;
@@ -105,23 +118,24 @@
     text-transform: uppercase;
     font-family: monospace;
     cursor: pointer;
-    background-color: var(--card-bg);
+    color: #fff;
     position: relative;
     margin-right: auto;
     z-index: 21;
+    padding: 10px 20px;
   }
   .menu-mobile span {
     color: var(--card-text-color);
   }
   .menu-mobile::before {
     content: '';
-    display: inline-block;
-    height: 2px;
-    width: 12px;
-    background-color: #592b02;
-    box-shadow:
-      0 4px #592b02,
-      0 -4px #592b02;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/menu-hamburguer-fundo-branco-sem-bgpng.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .nav-list {
     display: none;
@@ -160,5 +174,11 @@
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .flavors .row {
+    grid-template-columns: 1fr;
   }
 }

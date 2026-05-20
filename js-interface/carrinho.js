@@ -13,35 +13,39 @@ function Adicionar_ao_carrinho(id,nome,preco){
         carrinho.push({'id':id, 'nome':nome, 'preco':preco, 'quantidade':1});
     }
 
-    atualizar_tela();
+  if (item) {
+    item.quantidade += 1;
+  } else {
+    carrinho.push({ id: id, nome: nome, preco: preco, quantidade: 1 });
+  }
+
+  atualizar_tela();
 }
 
-function alterar_quantidade(id,quantidade){
+function alterar_quantidade(id, quantidade) {
+  let item = carrinho.find((item) => item.id === id);
 
-    let item = carrinho.find(item=> item.id === id)
+  if (item) {
+    item.quantidade += quantidade;
+  } else {
+    console.log('Erro no alterar quantidade de id', id);
+  }
 
-    if(item){
-        item.quantidade += quantidade
-    }else{
-        console.log("Erro no alterar quantidade de id",id);
-    }
+  if (item.quantidade <= 0) {
+    carrinho = carrinho.filter((item) => item.id !== id);
+  }
 
-    if (item.quantidade <= 0) {
-        carrinho = carrinho.filter(item => item.id !== id);
-    }
-
-    atualizar_tela();
+  atualizar_tela();
 }
 
-function remover_item(id){
+function remover_item(id) {
+  carrinho = carrinho.filter((item) => item.id !== id);
 
-    carrinho = carrinho.filter(item => item.id !== id);
-
-    atualizar_tela();
+  atualizar_tela();
 }
 
-function atualizar_tela(){
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+function atualizar_tela() {
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
 
     let subtotal = 0;
 
