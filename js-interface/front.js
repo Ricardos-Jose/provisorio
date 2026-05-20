@@ -23,3 +23,17 @@ function abrirMenu() {
 }
 
 menu.addEventListener('click', abrirMenu);
+
+
+function Adicionar_ao_carrinho(id,nome,preco){
+  const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    let item = carrinho.find(item=> item.id === id)
+    
+    if(item){
+        item.quantidade+=1;
+    }else{
+        carrinho.push({'id':id, 'nome':nome, 'preco':preco, 'quantidade':1});
+    }
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+}

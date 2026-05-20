@@ -54,7 +54,7 @@ function atualizar_tela(){
 
                     <div>
                     <h2>${item.nome}</h2>
-                    <p>${item.preco}</p>
+                    <p>R$ ${item.preco}</p>
                     </div>
 
                     <div class="quantidade">
