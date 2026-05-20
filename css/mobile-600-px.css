@@ -118,23 +118,24 @@
     text-transform: uppercase;
     font-family: monospace;
     cursor: pointer;
-    background-color: var(--card-bg);
+    color: #fff;
     position: relative;
     margin-right: auto;
     z-index: 21;
+    padding: 10px 20px;
   }
   .menu-mobile span {
     color: var(--card-text-color);
   }
   .menu-mobile::before {
     content: '';
-    display: inline-block;
-    height: 2px;
-    width: 12px;
-    background-color: #592b02;
-    box-shadow:
-      0 4px #592b02,
-      0 -4px #592b02;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/menu-hamburguer-fundo-branco-sem-bgpng.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .nav-list {
     display: none;
