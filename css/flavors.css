@@ -64,7 +64,7 @@
 }
 .card button {
     cursor: pointer;
-    background-color: var(--card-text-color);
+    background-color: var(--background-secondary);
     color: #ffffff;
     font-size: 20px;
     padding: 8px;
@@ -76,4 +76,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.card h1 {
+    color: #835311;
 }
