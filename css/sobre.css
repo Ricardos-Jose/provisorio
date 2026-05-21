@@ -20,6 +20,7 @@
 
 .sobre-item img {
     width: 40vw;
+    border-radius: 0.25rem;
 }
 
 .sobre-item iframe {

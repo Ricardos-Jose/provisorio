@@ -58,24 +58,25 @@ function atualizar_tela() {
 
       container.innerHTML += `
             <div class="carrinho-item">
-                <div class="left-carrinho-item">
-
-                    <div>
-                    <h2>${item.nome}</h2>
-                    <p>R$ ${item.preco.toFixed(2)}</p>
-                    </div>
-
-                    <div class="quantidade">
-                    <button class="alterar" onclick="alterar_quantidade(${item.id},-1)"><img src="images/menos.svg" alt=""></button>
-                    <p>${item.quantidade}</p>
-                    <button class="alterar" onclick="alterar_quantidade(${item.id},1)"><img src="images/mais.png" alt=""></button>
-                    </div>
+                <div>
+                <h2>${item.nome}</h2>
+                <p>R$ ${item.preco.toFixed(2)}</p>
                 </div>
 
-                <button class="lixo_button" onclick="remover_item(${item.id})">
-                    <img class="lixo" src="images/lixo_preto.svg" alt="">
-                    <img class="lixo_hover" src="images/lixo_vermelho.svg" alt="">
-                </button>
+                <div class="carrinho-item__controls">
+                  <div class="quantidade">
+                  <button class="alterar" onclick="alterar_quantidade(${item.id},-1)"><img src="images/menos.svg" alt=""></button>
+                  <p>${item.quantidade}</p>
+                  <button class="alterar" onclick="alterar_quantidade(${item.id},1)"><img src="images/mais.png" alt=""></button>
+                  </div>
+
+                  <button class="lixo_button" onclick="remover_item(${item.id})">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                  </svg>
+                  </button>
+                </div>
             </div>
             `;
     });
