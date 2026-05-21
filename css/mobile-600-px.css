@@ -1,3 +1,14 @@
+/* MEDIA PARA CHECKOUT */
+@media (max-width: 940px) {
+  .grid-entrega-topo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-entrega-topo .campo:last-child {
+    grid-column: span 2;
+  }
+}
+
 @media (max-width: 748px) {
   .container-grid {
     grid-template-columns: 1fr 1fr;
@@ -175,8 +186,38 @@
     box-sizing: border-box;
     padding: 20px;
   }
-  .grupo-formulario {
-    display: grid;
+  .grupo-formulario h2 {
+    font-size: 28px;
+  }
+
+  .grid-layout,
+  .grid-entrega-topo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .campo input,
+  .campo select {
+    height: 50px;
+    font-size: 16px;
+  }
+  .campo[style*='grid-column'] {
+    grid-column: span 1;
+  }
+
+  .campo textarea {
+    font-size: 16px;
+  }
+  .grid-entrega-topo {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-entrega-topo .campo:last-child {
+    grid-column: span 1;
+  }
+  .campo {
+    grid-column: auto;
+  }
+  .grid-layout {
     grid-template-columns: 1fr;
   }
 }
