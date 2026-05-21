@@ -61,4 +61,5 @@ body {
 .icon-with-label > * {
     display: inline-block;
     vertical-align: middle;
+    white-space: wrap;
 }
