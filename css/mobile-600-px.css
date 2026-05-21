@@ -36,6 +36,9 @@
   }
 }
 @media (max-width: 600px) {
+  .container-formulario {
+    margin: 20px;
+  }
   body {
     padding-top: 60px;
   }
@@ -197,10 +200,12 @@
   }
   .campo input,
   .campo select {
+    width: 100%;
+    box-sizing: border-box;
     height: 50px;
     font-size: 16px;
   }
-  .campo[style*='grid-column'] {
+  .campo {
     grid-column: auto;
   }
   .campo {
@@ -212,11 +217,6 @@
   }
   .grid-entrega-topo {
     grid-template-columns: 1fr;
-  }
-  .grid-layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
   }
 }
 
