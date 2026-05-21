@@ -48,12 +48,12 @@ body {
 }
 .btn-contraste {
     margin-top: 24px;
-    background-color: var(--contrast-font);
-    color: white;
+    background-color: var(--background-primary);
+    color: var(--background-secondary);
     font-size: 1.4rem;
 }
 .btn-contraste:hover {
-    background-color: #af3f1d;
+    background-color: #d3d1b0;
 }
 .icon-with-label {
     white-space: nowrap;

@@ -2,6 +2,9 @@
     background-color: #f9f6cc;
     color: black;
 }
+.flavors-lightbg h1 {
+    color: var(--background-secondary);
+}
 
 .card-lightbg {
     background-color: #bf8431;
@@ -10,4 +13,7 @@
 .card-lightbg button {
     background-color: blanchedalmond;
     color: #bf8431;
+}
+.card-lightbg h1 {
+    color: blanchedalmond;
 }
