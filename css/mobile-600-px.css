@@ -205,6 +205,7 @@
   }
   .campo {
     grid-column: auto;
+    width: 100%;
   }
   .campo textarea {
     font-size: 16px;
@@ -212,12 +213,10 @@
   .grid-entrega-topo {
     grid-template-columns: 1fr;
   }
-
-  .grid-entrega-topo .campo:last-child {
-    grid-column: span 1;
-  }
-  .campo {
-    grid-column: span 1;
+  .grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
