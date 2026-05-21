@@ -1,4 +1,4 @@
-.sobre-container{
+.sobre-container {
     padding: 40px 10vw;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     gap: 20px;
 }
 
-.sobre-item{
+.sobre-item {
     display: flex;
     justify-content: space-between;
     gap: 60px;
@@ -14,18 +14,23 @@
     width: 100%;
 }
 
-.sobre-item img{
-    width: 100%;
-}
-
-.sobre-item.invertido{
+.sobre-item.invertido {
     flex-direction: row-reverse;
 }
 
-.sobre-item div{
-    width: 60vw;
+.sobre-item img {
+    width: 40vw;
 }
 
-.sobre-item iframe{
+.sobre-item iframe {
     height: inherit;
+}
+
+@media only screen and (width < 720px) {
+    .sobre-item {
+        flex-direction: column;
+    }
+    .sobre-item img {
+        width: 100%;
+    }
 }
