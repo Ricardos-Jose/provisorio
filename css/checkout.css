@@ -1,107 +1,106 @@
 .container-formulario {
-  margin: 90px;
-  justify-self: center;
-  --text-primary: var(--background-secondary);
+    margin: 90px;
+    justify-self: center;
+    --text-primary: var(--background-secondary);
 }
 label {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 .grupo-formulario {
-  padding: 5px;
-  border-radius: 4px;
-  width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
 }
 
 .grupo-formulario h2 {
-  color: var(--text-primary);
-  width: 100%;
-  margin-bottom: 15px;
-  font-size: 42px;
+    color: var(--text-primary);
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 42px;
 }
 
 .grid-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 16px;
-  width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+    width: 100%;
 }
 
 .grid-entrega-topo {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1.5fr;
-  gap: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 25px;
 }
 
 .campo {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .campo label {
-  color: var(--card-text-color);
-  margin-bottom: 12px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 600;
+    color: var(--card-text-color);
+    margin-bottom: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
 .campo input {
-  color: var(--text-primary);
-  height: 65px;
-  padding: 0 10px;
-  font-size: 22px;
-  border: 2px solid var(--text-primary);
-  border-radius: 12px;
-  background-color: transparent;
-  outline: none;
+    color: var(--text-primary);
+    height: 65px;
+    padding: 0 10px;
+    font-size: 22px;
+    border: 2px solid var(--text-primary);
+    border-radius: 12px;
+    background-color: transparent;
+    outline: none;
 }
 
 .campo select {
-  height: 65px;
-  padding: 0 20px;
-  font-size: 20px;
-  border: 2px solid var(--text-primary);
-  border-radius: 12px;
-  background-color: transparent;
-  outline: none;
-  color: var(--text-primary);
+    height: 65px;
+    padding: 0 20px;
+    font-size: 20px;
+    border: 2px solid var(--text-primary);
+    border-radius: 12px;
+    background-color: transparent;
+    outline: none;
+    color: var(--text-primary);
 }
 
 .campo textarea {
-  min-height: 180px;
-  padding: 20px;
-  font-size: 20px;
-  border: 2px solid var(--text-primary);
-  border-radius: 12px;
-  background-color: transparent;
-  resize: vertical;
-  outline: none;
-  font-family: inherit;
+    min-height: 180px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid var(--text-primary);
+    border-radius: 12px;
+    background-color: transparent;
+    resize: vertical;
+    outline: none;
+    font-family: inherit;
 }
 
 ::placeholder {
-  color: var(--text-primary);
-  opacity: 0.3;
+    color: var(--text-primary);
+    opacity: 0.3;
 }
 
 .span-2 {
-  grid-column: span 2;
+    grid-column: span 2;
 }
 
-
 .finalizar-pedido {
-  cursor: pointer;
-  margin-top: 30px;
-  background-color: #592b02;
-  cursor: pointer;
-  color: white;
-  padding: 16px;
-  border-radius: 16px;
-  font-size: 28px;
-  font-weight: bold;
-  width: 100%;
-  border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #592b02;
+    cursor: pointer;
+    color: white;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    border: none;
 }
 /* RESPONSIVO */

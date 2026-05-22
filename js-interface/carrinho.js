@@ -46,14 +46,15 @@ function remover_item(id) {
 }
 
 function atualizar_tela() {
-  atualizar_icon_notification()
+  atualizar_icon_notification();
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
   let subtotal = 0;
 
   container.innerHTML = "";
   if (carrinho.length === 0) {
-    container.innerHTML = "<p style='font-size:1.6rem'>O carrinho está vazio.</p>";
+    container.innerHTML =
+      "<p style='font-size:1.6rem'>O carrinho está vazio.</p>";
   } else {
     carrinho.forEach((item) => {
       subtotal += item.preco * item.quantidade;
