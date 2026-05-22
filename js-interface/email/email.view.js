@@ -8,7 +8,7 @@ import {
   ProductMailInfo,
 } from "./email.model.js";
 
-const USE_FAKE_MAILER = true;
+const USE_FAKE_MAILER = false;
 
 class State {
   constructor() {
@@ -130,7 +130,6 @@ function onLoad() {
       e.preventDefault();
 
       const formData = new FormData(e.currentTarget);
-      debugger;
 
       // Anti-bot check
       if (formData.get("enderecoComplementar") != "") {

@@ -132,7 +132,7 @@ export class MailInfo {
 export class MailService {
   // Utilizar Base64 para armazenar os valores
   static SERVICE_ID = atob("c2VydmljZV91aWR4MHc0");
-  static USER_ID = atob(""); // REPLACE ME
+  static USER_ID = atob("OHR1U2ZxdlNiUVE1YV8taGo=");
   static TEMPLATE_ID = "template_vmha5nm";
   static SERVICE_URL = "https://api.emailjs.com/api/v1.0/email/send";
 
