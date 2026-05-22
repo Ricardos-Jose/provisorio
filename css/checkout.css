@@ -1,3 +1,7 @@
+.grupo-formulario * {
+    min-width: 0;
+}
+
 .container-formulario {
     margin: 90px;
     justify-self: center;
@@ -29,7 +33,7 @@ label {
 .grid-entrega-topo {
     width: 100%;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     gap: 25px;
 }
 
