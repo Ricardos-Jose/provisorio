@@ -1,6 +1,8 @@
 const menu = document.querySelector('.menu-mobile');
 const menuHidden = document.querySelector('.nav-list');
 
+const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
 let outsideListenerActive = false;
 
 function handleOutsideClick(event) {
@@ -26,7 +28,6 @@ menu.addEventListener('click', abrirMenu);
 
 
 function Adicionar_ao_carrinho(id,nome,preco){
-  const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
   let item = carrinho.find(item=> item.id === id)
   
@@ -48,4 +49,17 @@ function Notificar_adicao_carrinho() {
   let notificacao = document.getElementById("notificacao");
   notificacao.className = "show";
   setTimeout(function(){ notificacao.className = notificacao.className.replace("show", ""); }, 3000);
+
 }
+
+function atualizar_icon_notification(){
+  let icon_notification = document.getElementById("icon-notification")
+
+  if(carrinho.length>0){
+    icon_notification.innerText = carrinho.length
+    icon_notification.classList.remove("hidden")
+  }else{
+    icon_notification.classList.add("hidden")
+  }
+}
+atualizar_icon_notification()

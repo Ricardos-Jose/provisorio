@@ -1,6 +1,7 @@
 const container = document.getElementsByClassName("carrinho-container")[0];
 
-let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+// Adicionar const no carrinho quando esse arquivo não estiver sendo usado juntro com o do front
+// carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
 const preco_entrega = 12.99;
 

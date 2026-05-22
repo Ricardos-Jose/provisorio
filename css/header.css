@@ -14,7 +14,6 @@ header nav {
   gap: 30px;
 }
 header nav a {
-  /*AINDA NÃO DECIDIDO COR PARA TIPOGRAFIAS*/
   color: var(--background-primary);
   text-decoration: none;
   font-size: 20px;
@@ -23,7 +22,29 @@ header nav a {
 .icon-group {
   display: flex;
   gap: 15px;
+  position: relative;
 }
+
+.icon-notification{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff4757; /* Cor vermelha para chamar atenção */
+  color: white;
+  border-radius: 50%;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1;
+
+}
+
+.icon-notification.hidden{
+    display: none;
+}
+
 .icon {
   height: 30px;
 }
