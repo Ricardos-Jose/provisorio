@@ -1,5 +1,5 @@
 .sobre-container {
-    margin: 1rem 5vw;
+    margin: 0.475rem 5vw;
     width: min(auto, 1440px);
     padding: 40px 10vw;
 
@@ -28,7 +28,7 @@
 }
 
 .sobre-paragrafo {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .sobre-container h1,
