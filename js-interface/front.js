@@ -50,6 +50,7 @@ function Notificar_adicao_carrinho() {
   notificacao.className = "show";
   setTimeout(function(){ notificacao.className = notificacao.className.replace("show", ""); }, 3000);
 
+  atualizar_icon_notification();
 }
 
 function atualizar_icon_notification(){
