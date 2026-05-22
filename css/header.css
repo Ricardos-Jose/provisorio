@@ -1,54 +1,53 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--header-nav);
-  padding: 6px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-nav);
+    padding: 6px 45px;
 }
 header .logo {
-  height: 80px;
-  border-radius: 50%;
+    height: 80px;
+    border-radius: 50%;
 }
 header nav {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 header nav a {
-  color: var(--background-primary);
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
+    color: var(--background-primary);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
 }
 .icon-group {
-  display: flex;
-  gap: 15px;
-  position: relative;
+    display: flex;
+    gap: 15px;
+    position: relative;
 }
 
-.icon-notification{
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: #ff4757; /* Cor vermelha para chamar atenção */
-  color: white;
-  border-radius: 50%;
-  padding: 4px 6px;
-  font-size: 12px;
-  font-weight: bold;
-  min-width: 16px;
-  text-align: center;
-  line-height: 1;
-
+.icon-notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4757; /* Cor vermelha para chamar atenção */
+    color: white;
+    border-radius: 50%;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 16px;
+    text-align: center;
+    line-height: 1;
 }
 
-.icon-notification.hidden{
+.icon-notification.hidden {
     display: none;
 }
 
 .icon {
-  height: 30px;
+    height: 30px;
 }
 
 .spantes {
-  display: none;
+    display: none;
 }

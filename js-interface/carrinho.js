@@ -6,59 +6,59 @@ const container = document.getElementsByClassName("carrinho-container")[0];
 const preco_entrega = 12.99;
 
 function Adicionar_ao_carrinho(id, nome, preco) {
-  let item = carrinho.find((item) => item.id === id);
+    let item = carrinho.find((item) => item.id === id);
 
-  if (item) {
-    item.quantidade += 1;
-  } else {
-    carrinho.push({ id: id, nome: nome, preco: preco, quantidade: 1 });
-  }
+    if (item) {
+        item.quantidade += 1;
+    } else {
+        carrinho.push({ id: id, nome: nome, preco: preco, quantidade: 1 });
+    }
 
-  if (item) {
-    item.quantidade += 1;
-  } else {
-    carrinho.push({ id: id, nome: nome, preco: preco, quantidade: 1 });
-  }
+    if (item) {
+        item.quantidade += 1;
+    } else {
+        carrinho.push({ id: id, nome: nome, preco: preco, quantidade: 1 });
+    }
 
-  atualizar_tela();
+    atualizar_tela();
 }
 
 function alterar_quantidade(id, quantidade) {
-  let item = carrinho.find((item) => item.id === id);
+    let item = carrinho.find((item) => item.id === id);
 
-  if (item) {
-    item.quantidade += quantidade;
-  } else {
-    console.log("Erro no alterar quantidade de id", id);
-  }
+    if (item) {
+        item.quantidade += quantidade;
+    } else {
+        console.log("Erro no alterar quantidade de id", id);
+    }
 
-  if (item.quantidade <= 0) {
-    carrinho = carrinho.filter((item) => item.id !== id);
-  }
+    if (item.quantidade <= 0) {
+        carrinho = carrinho.filter((item) => item.id !== id);
+    }
 
-  atualizar_tela();
+    atualizar_tela();
 }
 
 function remover_item(id) {
-  carrinho = carrinho.filter((item) => item.id !== id);
+    carrinho = carrinho.filter((item) => item.id !== id);
 
-  atualizar_tela();
+    atualizar_tela();
 }
 
 function atualizar_tela() {
-  atualizar_icon_notification()
-  localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    atualizar_icon_notification();
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
-  let subtotal = 0;
+    let subtotal = 0;
 
-  container.innerHTML = "";
-  if (carrinho.length === 0) {
-    container.innerHTML = "<p style='font-size:1.6rem'>O carrinho está vazio.</p>";
-  } else {
-    carrinho.forEach((item) => {
-      subtotal += item.preco * item.quantidade;
+    container.innerHTML = "";
+    if (carrinho.length === 0) {
+        container.innerHTML = "<p style='font-size:1.6rem'>O carrinho está vazio.</p>";
+    } else {
+        carrinho.forEach((item) => {
+            subtotal += item.preco * item.quantidade;
 
-      container.innerHTML += `
+            container.innerHTML += `
             <div class="carrinho-item">
                 <div>
                 <h2>${item.nome}</h2>
@@ -81,9 +81,9 @@ function atualizar_tela() {
                 </div>
             </div>
             `;
-    });
+        });
 
-    container.innerHTML += `
+        container.innerHTML += `
             <div class="checkout">
 
                 <div class="linha"></div>
@@ -102,7 +102,7 @@ function atualizar_tela() {
                 </a>
             </div>
         `;
-  }
+    }
 }
 
 atualizar_tela();
