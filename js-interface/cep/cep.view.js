@@ -58,14 +58,24 @@ function onLoad() {
   cidade = document.getElementById("cidade");
   estado = document.getElementById("estado");
 
-  // Máscara do CEP
-  const maskOptions = {
-    mask: "00000-000",
-  };
-  const mask = IMask(cep, maskOptions);
+  email = document.getElementById("email");
+  telefone = document.getElementById("telefone");
 
-  mask.on("complete", async () => {
-    const cepDigitado = mask.unmaskedValue;
+  // Máscara do CEP
+  const cepMask = IMask(cep, {
+    mask: "00000-000",
+  });
+  // Máscara do Email
+  IMask(email, {
+    mask: /^\S+@?\S*$/,
+  });
+  // Máscara do telefone
+  IMask(telefone, {
+    mask: "(00) 00000-0000",
+  });
+
+  cepMask.on("complete", async () => {
+    const cepDigitado = cepMask.unmaskedValue;
     await onFillCep(cepDigitado);
   });
 
