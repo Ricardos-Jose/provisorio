@@ -1,7 +1,7 @@
 const menu = document.querySelector('.menu-mobile');
 const menuHidden = document.querySelector('.nav-list');
 
-const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
 let outsideListenerActive = false;
 

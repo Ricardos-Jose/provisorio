@@ -46,6 +46,7 @@ function remover_item(id) {
 }
 
 function atualizar_tela() {
+  atualizar_icon_notification()
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
   let subtotal = 0;
