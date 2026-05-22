@@ -1,44 +1,45 @@
 .intro {
-  /* margin: 80px 30vw 140px 30vw; */
-  padding: 40px 10vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Eagle Lake', serif;
-  gap: 50px;
+    user-select: none;
+    /* margin: 80px 30vw 140px 30vw; */
+    padding: 40px 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Eagle Lake", serif;
+    gap: 50px;
 }
 
 .title-font {
-  font-family: 'Rye', serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .intro nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 330px;
-  line-height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 330px;
+    line-height: 57px;
 }
 .intro nav .medium {
-  font-size: 57px;
+    font-size: 57px;
 }
 .intro nav .small {
-  font-size: 40px;
+    font-size: 40px;
 }
 .intro nav .big {
-  font-size: 90px;
+    font-size: 90px;
 }
 /* sujeito a alterações */
 .banner {
-  width: 100%;
-  max-width: 400px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .contrast-font {
-  color: var(--contrast-font);
+    color: var(--contrast-font);
 }
