@@ -1,11 +1,10 @@
 .sobre-container {
     margin: 1rem 5vw;
     width: min(auto, 1440px);
-    /*padding: 40px 10vw;
-    display: flex;
-    flex-direction: column;
+    padding: 40px 10vw;
+
     align-items: center;
-    gap: 20px;*/
+    gap: 20px;
 }
 
 .sobre-container p {
@@ -27,3 +26,20 @@
 .mr-2 {
     margin-left: 0.5rem;
 }
+
+.sobre-paragrafo {
+    margin-bottom: 40px;
+}
+
+.sobre-container h1,
+.sobre-container h2 {
+    color: var(--background-secondary);
+}
+
+.sobre-container h1 {
+    font-size: 50px;
+}
+.sobre-container h2 {
+    font-size: 30px;
+}
+
