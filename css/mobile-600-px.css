@@ -28,10 +28,7 @@
     .container-formulario {
         margin: 20px;
     }
-    body {
-        padding-top: 60px;
-    }
-    .logo {
+    a:has(.logo) {
         display: none;
     }
     .media-header {
@@ -49,6 +46,9 @@
     }
     .media-header nav a {
         padding: 0px 15px;
+    }
+    .media-header > * {
+        padding: 10px 20px;
     }
 
     .media-intro {
@@ -76,17 +76,12 @@
         font-size: 60px;
     }
     header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 6px 16px;
         flex-wrap: wrap;
-        position: fixed;
+        position: sticky;
         top: 0;
         left: 0;
-        right: 0;
         z-index: 20;
-        background-color: var(--header-nav);
     }
 
     .intro nav .medium {
@@ -117,7 +112,6 @@
         display: flex;
         align-items: center;
         gap: 2px;
-        padding: 0.5rem;
         text-transform: uppercase;
         font-family: monospace;
         cursor: pointer;
@@ -125,7 +119,6 @@
         position: relative;
         margin-right: auto;
         z-index: 21;
-        padding: 10px 20px;
     }
     .menu-mobile span {
         color: var(--card-text-color);

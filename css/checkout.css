@@ -3,7 +3,7 @@
 }
 
 .container-formulario {
-    margin: 90px;
+    margin: 2rem max(0.25rem, 10vw);
     justify-self: center;
     --text-primary: var(--background-secondary);
 }
