@@ -1,14 +1,26 @@
 {
-    "type": "module",
-    "dependencies": {
-        "prettier": "^3.8.3"
-    },
-    "prettier": {
-        "tabWidth": 4,
-        "endOfLine": "crlf",
-        "trailingComma": "all",
-        "semi": true,
-        "htmlWhitespaceSensitivity": "ignore",
-        "printWidth": 120
-    }
+  "type": "module",
+  "dependencies": {
+    "prettier": "^3.8.3"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "endOfLine": "crlf",
+    "trailingComma": "all",
+    "semi": true,
+    "htmlWhitespaceSensitivity": "ignore",
+    "printWidth": 80,
+    "overrides": [
+      {
+        "files": [
+          "*.html",
+          "*.css"
+        ],
+        "options": {
+          "tabWidth": 4,
+          "printWidth": 120
+        }
+      }
+    ]
+  }
 }
