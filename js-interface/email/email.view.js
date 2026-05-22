@@ -54,7 +54,7 @@ function formatPaymentMethod(method) {
   } else if (lower === "boleto") {
     return "Boleto Bancário";
   } else {
-    return String.charAt(0).toUpperCase() + String.slice(1);
+    return method.charAt(0).toUpperCase() + method.slice(1).toLowerCase();
   }
 }
 
