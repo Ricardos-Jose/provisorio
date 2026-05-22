@@ -43,3 +43,17 @@
     font-size: 30px;
 }
 
+@media (max-width: 600px) {
+    .sobre-container {
+        margin: 0;
+        padding: 10px 10vw;
+    }
+
+    .sobre-container h1 {
+        font-size: 30px;
+    }
+    .sobre-container h2 {
+        font-size: 20px;
+    }
+}
+
