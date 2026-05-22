@@ -72,6 +72,16 @@
     border: none;
     font-weight: bold;
 }
+
+.card button:hover{
+    opacity: 0.9;
+}
+
+.card button:active{
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
 .more-products {
     width: 100%;
     display: flex;
