@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -5,6 +6,7 @@
         <title>Dahora Cookies</title>
         <link rel="shortcut icon" href="./images/character.png" type="image/x-icon" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/imask"></script>
     </head>
 
     <body>
@@ -27,53 +29,53 @@
         </header>
 
         <section class="container-formulario">
-            <div class="grupo-formulario">
+            <form class="grupo-formulario">
                 <h2>Contato</h2>
                 <div class="grid-layout">
                     <div class="campo">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" placeholder="Seu nome" />
+                        <input required type="text" id="nome" name="nome" placeholder="Seu nome" />
                     </div>
                     <div class="campo">
                         <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" placeholder="(11) 99999-0000" />
+                        <input required type="text" id="telefone" name="telefone" placeholder="(11) 99999-0000" />
                     </div>
                     <div class="campo span-2">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="voce@exemplo.com" />
+                        <input required type="email" id="email" name="email" placeholder="voce@exemplo.com" />
                     </div>
                 </div>
-            </div>
+            </form>
 
             <div class="grupo-formulario">
                 <h2>Entrega</h2>
                 <div class="campo">
                     <label for="cep">CEP</label>
-                    <input type="text" id="cep" placeholder="00000-000" />
+                    <input required type="text" id="cep" name="cep" placeholder="00000-000" />
                 </div>
 
-                <div class="grid-entrega-topo">
-                    <div class="campo">
-                        <label for="endereco">Endereço</label>
-                        <input type="text" id="endereco" placeholder="Rua, avenida..." />
-                    </div>
-                    <div class="campo">
-                        <label for="numero">Número</label>
-                        <input type="text" id="numero" placeholder="123" />
-                    </div>
-                    <div class="campo">
-                        <label for="complemento">Complemento</label>
-                        <input type="text" id="complemento" placeholder="Apto, bloco" />
-                    </div>
-                </div>
                 <div class="grid-layout">
                     <div class="campo">
                         <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" placeholder="São Paulo" />
+                        <input required type="text" id="cidade" name="cidade" placeholder="São Paulo" />
                     </div>
                     <div class="campo">
                         <label for="estado">Estado</label>
-                        <input type="text" id="estado" placeholder="SP" />
+                        <input required type="text" id="estado" name="estado" placeholder="SP" />
+                    </div>
+                </div>
+                <div class="grid-entrega-topo">
+                    <div class="campo">
+                        <label for="endereco">Endereço</label>
+                        <input required type="text" id="endereco" name="endereco" placeholder="Rua, avenida..." />
+                    </div>
+                    <div class="campo">
+                        <label for="numero">Número</label>
+                        <input required type="text" id="numero" name="numero" placeholder="123" />
+                    </div>
+                    <div class="campo">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="complemento" placeholder="Apto, bloco" />
                     </div>
                 </div>
             </div>
@@ -81,7 +83,7 @@
                 <h2>Pagamento</h2>
                 <div class="campo">
                     <label for="pagamento">Formas de Pagamento</label>
-                    <select name="pagamento" id="pagamento">
+                    <select required name="pagamento" id="pagamento" name="pagamento">
                         <option value="">Selecione uma opção</option>
                         <option value="pix">Pix</option>
                         <option value="cartao">Cartão de Crédito</option>
@@ -187,6 +189,8 @@
                 </div>
             </div>
         </footer>
+
+        <script type="module" src="js-interface/cep/cep.view.js"></script>
         <script src="js-interface/front.js"></script>
     </body>
 </html>

@@ -46,48 +46,69 @@ label {
     color: var(--card-text-color);
     margin-bottom: 12px;
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
     font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-.campo input {
+/* Shared field styles */
+.campo :is(input, select, textarea) {
     color: var(--text-primary);
-    height: 65px;
-    padding: 0 10px;
-    font-size: 22px;
     border: 2px solid var(--text-primary);
     border-radius: 12px;
-    background-color: transparent;
+    background: transparent;
     outline: none;
+    font: inherit;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+/* Specific tweaks */
+.campo input {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.375rem;
 }
 
 .campo select {
-    height: 65px;
-    padding: 0 20px;
-    font-size: 20px;
-    border: 2px solid var(--text-primary);
-    border-radius: 12px;
-    background-color: transparent;
-    outline: none;
-    color: var(--text-primary);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.25rem;
 }
 
 .campo textarea {
     min-height: 180px;
     padding: 20px;
-    font-size: 20px;
-    border: 2px solid var(--text-primary);
-    border-radius: 12px;
-    background-color: transparent;
+    font-size: 1.25rem;
     resize: vertical;
-    outline: none;
-    font-family: inherit;
 }
 
-::placeholder {
+/* Scoped placeholder styling */
+.campo :is(input, textarea)::placeholder {
     color: var(--text-primary);
     opacity: 0.3;
+}
+
+/* Entire field reacts to disabled input */
+.campo:has(:disabled) {
+    opacity: 0.6;
+}
+
+/* Label changes too */
+.campo:has(:disabled) label {
+    color: var(--text-secondary);
+}
+
+/* Disabled controls */
+.campo :is(input, select, textarea):disabled {
+    border-color: var(--text-secondary);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+/* Disabled placeholder */
+.campo :is(input, textarea):disabled::placeholder {
+    color: var(--text-secondary);
 }
 
 .span-2 {
