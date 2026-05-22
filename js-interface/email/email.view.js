@@ -21,6 +21,7 @@ class State {
 
 let form;
 let loadingOverlay;
+let submitButton;
 
 let mailService;
 if (USE_FAKE_MAILER) {
@@ -41,6 +42,7 @@ function render(state) {
   }
 
   loadingOverlay.style.display = state.loading ? "grid" : "none";
+  submitButton.disabled = state.loading;
 }
 
 /**
@@ -116,6 +118,7 @@ function onLoad() {
   // init bindings
   form = document.querySelector(".container-formulario");
   loadingOverlay = document.querySelector(".loading-overlay");
+  submitButton = form?.querySelector("button");
 
   form.addEventListener("submit", (e) => {
     // Intelissense helper
@@ -127,6 +130,14 @@ function onLoad() {
       e.preventDefault();
 
       const formData = new FormData(e.currentTarget);
+      debugger;
+
+      // Anti-bot check
+      if (formData.get("enderecoComplementar") != "") {
+        window.location.href = ".";
+        return;
+      }
+
       const checkoutForm = CheckoutFormData.fromFormData(formData);
 
       handleSubmit(checkoutForm);
