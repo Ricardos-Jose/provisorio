@@ -3,9 +3,12 @@ import { CheckoutFormData } from "./checkout-form.model.js";
 import {
   AddressMailInfo,
   MailInfo,
+  MockMailService,
   MailService,
   ProductMailInfo,
 } from "./email.model.js";
+
+const USE_FAKE_MAILER = true;
 
 class State {
   constructor() {
@@ -19,7 +22,12 @@ class State {
 let form;
 let loadingOverlay;
 
-const mailService = new MailService();
+let mailService;
+if (USE_FAKE_MAILER) {
+  mailService = new MockMailService();
+} else {
+  mailService = new MailService();
+}
 const carrinhoRepository = new CarrinhoRepository();
 const state = new State();
 

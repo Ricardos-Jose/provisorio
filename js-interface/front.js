@@ -32,21 +32,24 @@ function Adicionar_ao_carrinho(id, nome, preco) {
   if (item) {
     item.quantidade += 1;
   } else {
-    carrinho.push({ id: id, nome: nome, preco: preco, quantidade: 1 });
+    carrinho.push({ id, nome, preco, quantidade: 1 });
   }
 
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
-  Notificar_adicao_carrinho();
-}
-function Notificar_adicao_carrinho() {
-  console.log("notificando ...");
-
-  let notificacao = document.getElementById("notificacao");
-  notificacao.className = "show";
-  setTimeout(function(){ notificacao.className = notificacao.className.replace("show", ""); }, 3000);
-
+  mostrarNotificacao("Produto adicionado ao carrinho.");
   atualizar_icon_notification();
+}
+
+function mostrarNotificacao(mensagem) {
+  let notificacao = document.getElementById("notificacao");
+
+  notificacao.textContent = mensagem;
+  notificacao.className = "show";
+
+  setTimeout(() => {
+    notificacao.className = notificacao.className.replace("show", "");
+  }, 3000);
 }
 
 function atualizar_icon_notification() {
@@ -59,4 +62,25 @@ function atualizar_icon_notification() {
     icon_notification.classList.add("hidden");
   }
 }
+
+function verificarMensagemURL() {
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get("message") === "1") {
+    mostrarNotificacao("Compra efetuada com êxito.");
+
+    // Remove o parâmetro da URL sem recarregar
+    params.delete("message");
+
+    const novaQuery = params.toString();
+    const novaURL =
+      window.location.pathname +
+      (novaQuery ? `?${novaQuery}` : "") +
+      window.location.hash;
+
+    history.replaceState({}, "", novaURL);
+  }
+}
+
 atualizar_icon_notification();
+verificarMensagemURL();
