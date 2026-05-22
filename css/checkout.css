@@ -6,6 +6,7 @@
     margin: 2rem max(0.25rem, 10vw);
     justify-self: center;
     --text-primary: var(--background-secondary);
+    --text-secondary: var(var(--header-nav));
 }
 label {
     margin-top: 10px;
@@ -118,7 +119,7 @@ label {
 .finalizar-pedido {
     cursor: pointer;
     margin-top: 30px;
-    background-color: #592b02;
+    background-color: var(--background-secondary);
     cursor: pointer;
     color: white;
     padding: 16px;
@@ -129,3 +130,12 @@ label {
     border: none;
 }
 /* RESPONSIVO */
+
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -24,6 +24,7 @@ class State {
 let cep;
 let endereco;
 let numero;
+let complemento;
 let cidade;
 let estado;
 
@@ -57,6 +58,7 @@ function onLoad() {
   numero = document.getElementById("numero");
   cidade = document.getElementById("cidade");
   estado = document.getElementById("estado");
+  complemento = document.getElementById("complemento");
 
   email = document.getElementById("email");
   telefone = document.getElementById("telefone");
@@ -96,7 +98,7 @@ function render(state) {
     numero.value = state.address.numero ?? numero.value;
     cidade.value = state.address.city ?? cidade.value;
     estado.value = state.address.state ?? estado.value;
-    complement.value = state.address.complement ?? complement.value;
+    complemento.value = state.address.complement ?? complemento.value;
   }
 }
 

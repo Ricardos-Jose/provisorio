@@ -1,12 +1,13 @@
 .intro {
     user-select: none;
-    /* margin: 80px 30vw 140px 30vw; */
     padding: 40px 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Eagle Lake", serif;
     gap: 50px;
+    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .title-font {

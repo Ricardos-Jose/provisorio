@@ -6,6 +6,7 @@
         <title>Dahora Cookies</title>
         <link rel="shortcut icon" href="./images/character.png" type="image/x-icon" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/spinner.css" />
         <script src="https://unpkg.com/imask"></script>
     </head>
 
@@ -28,8 +29,9 @@
             </a>
         </header>
 
-        <section class="container-formulario">
-            <form class="grupo-formulario">
+        <form class="container-formulario">
+            <input type="hidden" name="taxaEntrega" id="taxaEntrega" value="12.99" />
+            <div class="grupo-formulario">
                 <h2>Contato</h2>
                 <div class="grid-layout">
                     <div class="campo">
@@ -45,7 +47,7 @@
                         <input required type="email" id="email" name="email" placeholder="voce@exemplo.com" />
                     </div>
                 </div>
-            </form>
+            </div>
 
             <div class="grupo-formulario">
                 <h2>Entrega</h2>
@@ -104,7 +106,7 @@
                     <p>Finalizar Pedido</p>
                 </button>
             </div>
-        </section>
+        </form>
         <footer class="footer">
             <div class="container-grid">
                 <div class="contato">
@@ -190,7 +192,14 @@
             </div>
         </footer>
 
+        <div class="loading-overlay" style="display: none">
+            <div>
+                <div class="lds-dual-ring"></div>
+            </div>
+        </div>
+
         <script type="module" src="js-interface/cep/cep.view.js"></script>
+        <script type="module" src="js-interface/email/email.view.js"></script>
         <script src="js-interface/front.js"></script>
     </body>
 </html>
